@@ -1,0 +1,931 @@
+Microchip MPLAB XC8 Compiler V1.33 ()
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
+  -h+EggTimer.sym --cmf=EggTimer.cmf -z -Q16F877A \
+  -oC:\Users\RETROG~1\AppData\Local\Temp\skfo.6 -MEggTimer.map -E1 -ver=XC8 \
+  -ASTACK=0110h-016fh -pstack=STACK -ACONST=00h-0FFhx32 -ACODE=00h-07FFhx4 \
+  -ASTRCODE=00h-01FFFh -AENTRY=00h-0FFhx32 -ASTRING=00h-0FFhx32 \
+  -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
+  -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
+  -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
+  -DENTRY=2 -k startup.obj EggTimer.obj 
+
+Object code version is 3.11
+
+Machine type is 16F877A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                             12       12        3        8       0
+                reset_vec                             0        0        3        0       0
+                config                             2007     2007        1     400E       0
+EggTimer.obj    cinit                                15       15       30        8       0
+                intentry                              4        4        E        8       0
+                text13                              35D      35D       32        8       0
+                text12                              38F      38F       29        8       0
+                text11                              2B1      2B1       5D        8       0
+                text10                              30E      30E       4F        8       0
+                text9                               430      430       25        8       0
+                text8                               4D0      4D0       11        8       0
+                text7                               4AC      4AC       13        8       0
+                text6                               477      477       22        8       0
+                text5                               499      499       13        8       0
+                text4                               408      408       28        8       0
+                text3                               23E      23E       73        8       0
+                text2                                45       45      159        8       0
+                text1                               19E      19E       A0        8       0
+                maintext                            455      455       22        8       0
+                cstackBANK0                          20       20       4E       20       1
+                cstackCOMMON                         70       70        6       70       1
+                cstackBANK1                          C8       C8       18       A0       1
+                inittext                            4BF      4BF       11        8       0
+                dataBANK3                           190      190       28      190       1
+                dataBANK1                            A0       A0       28       A0       1
+                bssBANK1                             E0       E0        C       A0       1
+                bssBANK0                             6E       6E        2       20       1
+                bssCOMMON                            76       76        2       70       1
+                idataBANK3                          3E0      3E0       28        8       0
+                idataBANK1                          3B8      3B8       28        8       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                             12       12        3         0
+                cinit                                15       15       30         0
+                intentry                              4        4        E         0
+                reset_vec                             0        0        3         0
+                text13                              35D      35D       32         0
+                text12                              38F      38F       29         0
+                text11                              2B1      2B1       5D         0
+                text10                              30E      30E       4F         0
+                text9                               430      430       25         0
+                text8                               4D0      4D0       11         0
+                text7                               4AC      4AC       13         0
+                text6                               477      477       22         0
+                text5                               499      499       13         0
+                text4                               408      408       28         0
+                text3                               23E      23E       73         0
+                text2                                45       45      159         0
+                text1                               19E      19E       A0         0
+                maintext                            455      455       22         0
+                inittext                            4BF      4BF       11         0
+                idataBANK3                          3E0      3E0       28         0
+                idataBANK1                          3B8      3B8       28         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        6         1
+                bssCOMMON                            76       76        2         1
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       4E         1
+                bssBANK0                             6E       6E        2         1
+
+        CLASS   BANK1          
+                cstackBANK1                          C8       C8       18         1
+                dataBANK1                            A0       A0       28         1
+                bssBANK1                             E0       E0        C         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+                dataBANK3                           190      190       28         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000003  000003         0       0  CODE        2
+                intentry                       000004  0004DD  0004E1         8       0  CODE        2
+                cstackBANK0                    000020  000050  000070        20       1  BANK0       1
+                cstackCOMMON                   000070  000008  000078        70       1  COMMON      1
+                dataBANK1                      0000A0  00004C  0000EC        A0       1  BANK1       1
+                dataBANK3                      000190  000028  0001B8       190       1  BANK3       1
+                config                         002007  000001  002008      400E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK1            00EC-00EF              4           1
+        BANK2            0110-016F             60           1
+        BANK3            01B8-01EF             38           1
+        CODE             0003-0003              1           2
+                         04E1-1FFF            800
+        COMMON           0078-007D              6           1
+        CONST            0003-0003              1           2
+                         04E1-1FFF            100
+        EEDATA           2100-21FF            100           2
+        ENTRY            0003-0003              1           2
+                         04E1-1FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              00EC-00EF              4           1
+                         0110-016F             60
+                         01B8-01EF             38
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-010F             10           1
+        SFR3             0180-018F             10           1
+        STACK            0110-016F             60           1
+        STRCODE          0003-0003              1           2
+                         04E1-1FFF           1B1F
+        STRING           0003-0003              1           2
+                         04E1-1FFF            100
+
+                                  Symbol Table
+
+?___awdiv                cstackBANK0  0020
+?___awmod                cstackBANK0  0020
+?___wmul                 cstackBANK0  0020
+_ADCON1                  (abs)        009F
+_CMCON                   (abs)        009C
+_GIE                     (abs)        005F
+_INTE                    (abs)        005C
+_INTF                    (abs)        0059
+_ISR                     text12       038F
+_OPTION_REG              (abs)        0081
+_PORTC                   (abs)        0007
+_PORTD                   (abs)        0008
+_RA0                     (abs)        0028
+_RA1                     (abs)        0029
+_RA2                     (abs)        002A
+_RB0                     (abs)        0030
+_T0IE                    (abs)        005D
+_T0IF                    (abs)        005A
+_TRISA                   (abs)        0085
+_TRISB                   (abs)        0086
+_TRISC                   (abs)        0087
+_TRISD                   (abs)        0088
+__CFG_BOREN$ON           (abs)        0000
+__CFG_CP$OFF             (abs)        0000
+__CFG_CPD$OFF            (abs)        0000
+__CFG_FOSC$XT            (abs)        0000
+__CFG_LVP$OFF            (abs)        0000
+__CFG_PWRTE$ON           (abs)        0000
+__CFG_WDTE$OFF           (abs)        0000
+__CFG_WRT$OFF            (abs)        0000
+__Habs1                  abs1         0000
+__Hbank0                 bank0        0000
+__Hbank1                 bank1        0000
+__Hbank2                 bank2        0000
+__Hbank3                 bank3        0000
+__HbssBANK0              bssBANK0     0000
+__HbssBANK1              bssBANK1     0000
+__HbssCOMMON             bssCOMMON    0000
+__Hcinit                 cinit        0045
+__Hclrtext               clrtext      0000
+__Hcode                  code         0000
+__Hcommon                common       0000
+__Hconfig                config       2008
+__HcstackBANK0           cstackBANK0  0000
+__HcstackBANK1           cstackBANK1  0000
+__HcstackCOMMON          cstackCOMMON 0000
+__HdataBANK1             dataBANK1    0000
+__HdataBANK3             dataBANK3    0000
+__Heeprom_data           eeprom_data  0000
+__Hend_init              end_init     0015
+__Hfunctab               functab      0000
+__HidataBANK1            idataBANK1   0000
+__HidataBANK3            idataBANK3   0000
+__Hidloc                 idloc        0000
+__Hinit                  init         0012
+__Hinittext              inittext     0000
+__Hintentry              intentry     0012
+__Hmaintext              maintext     0000
+__Hpowerup               powerup      0000
+__Hram                   ram          0000
+__Hreset_vec             reset_vec    0003
+__Hsfr0                  sfr0         0000
+__Hsfr1                  sfr1         0000
+__Hsfr2                  sfr2         0000
+__Hsfr3                  sfr3         0000
+__Hspace_0               (abs)        2008
+__Hspace_1               (abs)        01B8
+__Hspace_2               (abs)        0000
+__Hspace_3               (abs)        0000
+__Hstack                 stack        0000
+__Hstrings               strings      0000
+__Htext                  text         0000
+__Labs1                  abs1         0000
+__Lbank0                 bank0        0000
+__Lbank1                 bank1        0000
+__Lbank2                 bank2        0000
+__Lbank3                 bank3        0000
+__LbssBANK0              bssBANK0     0000
+__LbssBANK1              bssBANK1     0000
+__LbssCOMMON             bssCOMMON    0000
+__Lcinit                 cinit        0015
+__Lclrtext               clrtext      0000
+__Lcode                  code         0000
+__Lcommon                common       0000
+__Lconfig                config       2007
+__LcstackBANK0           cstackBANK0  0000
+__LcstackBANK1           cstackBANK1  0000
+__LcstackCOMMON          cstackCOMMON 0000
+__LdataBANK1             dataBANK1    0000
+__LdataBANK3             dataBANK3    0000
+__Leeprom_data           eeprom_data  0000
+__Lend_init              end_init     0012
+__Lfunctab               functab      0000
+__LidataBANK1            idataBANK1   0000
+__LidataBANK3            idataBANK3   0000
+__Lidloc                 idloc        0000
+__Linit                  init         0012
+__Linittext              inittext     0000
+__Lintentry              intentry     0004
+__Lmaintext              maintext     0000
+__Lpowerup               powerup      0000
+__Lram                   ram          0000
+__Lreset_vec             reset_vec    0000
+__Lsfr0                  sfr0         0000
+__Lsfr1                  sfr1         0000
+__Lsfr2                  sfr2         0000
+__Lsfr3                  sfr3         0000
+__Lspace_0               (abs)        0000
+__Lspace_1               (abs)        0000
+__Lspace_2               (abs)        0000
+__Lspace_3               (abs)        0000
+__Lstack                 stack        0000
+__Lstrings               strings      0000
+__Ltext                  text         0000
+__S0                     (abs)        2008
+__S1                     (abs)        01B8
+__S2                     (abs)        0000
+__S3                     (abs)        0000
+___awdiv                 text11       02B1
+___awdiv@counter         cstackBANK0  0025
+___awdiv@dividend        cstackBANK0  0022
+___awdiv@divisor         cstackBANK0  0020
+___awdiv@quotient        cstackBANK0  0027
+___awdiv@sign            cstackBANK0  0026
+___awmod                 text10       030E
+___awmod@counter         cstackBANK0  0025
+___awmod@dividend        cstackBANK0  0022
+___awmod@divisor         cstackBANK0  0020
+___awmod@sign            cstackBANK0  0026
+___int_sp                stack        0000
+___latbits               (abs)        0002
+___sp                    stack        0000
+___wmul                  text9        0430
+___wmul@multiplicand     cstackBANK0  0022
+___wmul@multiplier       cstackBANK0  0020
+___wmul@product          cstackBANK0  0024
+__end_of_ISR             text12       03B8
+__end_of___awdiv         text11       030E
+__end_of___awmod         text10       035D
+__end_of___wmul          text9        0455
+__end_of__initialization cinit        0041
+__end_of_beginCount      text2        019E
+__end_of_dataCtrl        text7        04BF
+__end_of_delay           text8        04E1
+__end_of_dispHeader      text3        02B1
+__end_of_dispLCD         text1        023E
+__end_of_dispSTR         text6        0499
+__end_of_initLCD         text4        0430
+__end_of_instCtrl        text5        04AC
+__end_of_main            maintext     0477
+__end_of_toogleFlag      text13       038F
+__initialization         cinit        0015
+__pbssBANK0              bssBANK0     006E
+__pbssBANK1              bssBANK1     00E0
+__pbssCOMMON             bssCOMMON    0076
+__pcstackBANK0           cstackBANK0  0020
+__pcstackBANK1           cstackBANK1  00C8
+__pcstackCOMMON          cstackCOMMON 0070
+__pdataBANK1             dataBANK1    00A0
+__pdataBANK3             dataBANK3    0190
+__pidataBANK1            idataBANK1   03B8
+__pidataBANK3            idataBANK3   03E0
+__pintentry              intentry     0004
+__pmaintext              maintext     0455
+__ptext1                 text1        019E
+__ptext10                text10       030E
+__ptext11                text11       02B1
+__ptext12                text12       038F
+__ptext13                text13       035D
+__ptext2                 text2        0045
+__ptext3                 text3        023E
+__ptext4                 text4        0408
+__ptext5                 text5        0499
+__ptext6                 text6        0477
+__ptext7                 text7        04AC
+__ptext8                 text8        04D0
+__ptext9                 text9        0430
+__size_of_ISR            (abs)        0000
+__size_of___awdiv        (abs)        0000
+__size_of___awmod        (abs)        0000
+__size_of___wmul         (abs)        0000
+__size_of_beginCount     (abs)        0000
+__size_of_dataCtrl       (abs)        0000
+__size_of_delay          (abs)        0000
+__size_of_dispHeader     (abs)        0000
+__size_of_dispLCD        (abs)        0000
+__size_of_dispSTR        (abs)        0000
+__size_of_initLCD        (abs)        0000
+__size_of_instCtrl       (abs)        0000
+__size_of_main           (abs)        0000
+__size_of_toogleFlag     (abs)        0000
+_beginCount              text2        0045
+_count_flag              bssCOMMON    0076
+_dataCtrl                text7        04AC
+_dataRead                bssBANK0     006E
+_delay                   text8        04D0
+_dispHeader              text3        023E
+_dispLCD                 text1        019E
+_dispMin                 bssBANK1     00E0
+_dispSTR                 text6        0477
+_dispSec                 bssBANK1     00E2
+_flagPause               bssBANK1     00E4
+_flagStart               bssBANK1     00E6
+_initLCD                 text4        0408
+_instCtrl                text5        0499
+_main                    maintext     0455
+_minutes                 bssBANK1     00E8
+_seconds                 bssBANK1     00EA
+_toogleFlag              text13       035D
+beginCount@F1174         dataBANK1    00A0
+beginCount@header3       cstackBANK1  00C8
+beginCount@secLSB        cstackBANK1  00DC
+beginCount@secMSB        cstackBANK1  00DE
+btemp                    (abs)        007E
+dataCtrl@DATA            cstackBANK0  0023
+delay@timer              cstackBANK0  0020
+dispHeader@F1181         dataBANK1    00B4
+dispHeader@F1183         dataBANK3    0190
+dispHeader@F1185         dataBANK3    01A4
+dispHeader@header        cstackBANK0  002C
+dispHeader@header2       cstackBANK0  0040
+dispHeader@header3       cstackBANK0  0054
+dispLCD@DATA             cstackBANK0  006C
+dispSTR@STR              cstackBANK0  0027
+dispSTR@i                cstackBANK0  0025
+end_of_initialization    cinit        0041
+init_fetch0              inittext     04BF
+init_ram0                inittext     04C3
+instCtrl@INST            cstackBANK0  0023
+interrupt_function       intentry     0004
+intlevel0                functab      0000
+intlevel1                functab      0000
+intlevel2                functab      0000
+intlevel3                functab      0000
+intlevel4                functab      0000
+intlevel5                functab      0000
+ltemp                    (abs)        007E
+ltemp0                   (abs)        007E
+ltemp1                   (abs)        0082
+ltemp2                   (abs)        0086
+ltemp3                   (abs)        0080
+reset_vec                reset_vec    0000
+saved_w                  (abs)        007E
+stackhi                  (abs)        0000
+stacklo                  (abs)        0000
+start                    init         0012
+start_initialization     cinit        0015
+ttemp                    (abs)        007E
+ttemp0                   (abs)        007E
+ttemp1                   (abs)        0081
+ttemp2                   (abs)        0084
+ttemp3                   (abs)        0087
+ttemp4                   (abs)        007F
+wtemp                    (abs)        007E
+wtemp0                   (abs)        007E
+wtemp1                   (abs)        0080
+wtemp2                   (abs)        0082
+wtemp3                   (abs)        0084
+wtemp4                   (abs)        0086
+wtemp5                   (abs)        0088
+wtemp6                   (abs)        007F
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 30 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:    8
+ This function calls:
+		_dispHeader
+		_dispLCD
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _dispLCD *****************
+ Defined at:
+		line 127 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  DATA            2   76[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       2       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_beginCount
+		_dataCtrl
+		_instCtrl
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _beginCount *****************
+ Defined at:
+		line 56 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  secMSB          2   22[BANK1 ] int 
+  secLSB          2   20[BANK1 ] int 
+  header3        20    0[BANK1 ] unsigned char [20]
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0      24       0       0
+      Temps:          0       4       0       0       0
+      Totals:         0       4      24       0       0
+Total ram usage:       28 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		___awdiv
+		___awmod
+		___wmul
+		_dataCtrl
+		_delay
+		_dispHeader
+		_dispSTR
+		_instCtrl
+ This function is called by:
+		_dispLCD
+ This function uses a non-reentrant model
+
+
+ *************** function _dispHeader *****************
+ Defined at:
+		line 170 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  header3        20   52[BANK0 ] unsigned char [20]
+  header2        20   32[BANK0 ] unsigned char [20]
+  header         20   12[BANK0 ] unsigned char [20]
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0      60       0       0       0
+      Temps:          0       4       0       0       0
+      Totals:         0      64       0       0       0
+Total ram usage:       64 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_dispSTR
+		_initLCD
+		_instCtrl
+ This function is called by:
+		_main
+		_beginCount
+ This function uses a non-reentrant model
+
+
+ *************** function _initLCD *****************
+ Defined at:
+		line 107 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_delay
+		_instCtrl
+ This function is called by:
+		_dispHeader
+ This function uses a non-reentrant model
+
+
+ *************** function _instCtrl *****************
+ Defined at:
+		line 97 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+  INST            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  INST            1    3[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_delay
+ This function is called by:
+		_beginCount
+		_initLCD
+		_dispLCD
+		_dispHeader
+ This function uses a non-reentrant model
+
+
+ *************** function _dispSTR *****************
+ Defined at:
+		line 185 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+  STR             1    wreg     PTR unsigned char 
+		 -> dispHeader@header3(20), dispHeader@header2(20), dispHeader@header(20), beginCount@header3(20), 
+ Auto vars:     Size  Location     Type
+  STR             1    7[BANK0 ] PTR unsigned char 
+		 -> dispHeader@header3(20), dispHeader@header2(20), dispHeader@header(20), beginCount@header3(20), 
+  i               2    5[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       3       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       4       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_dataCtrl
+ This function is called by:
+		_beginCount
+		_dispHeader
+ This function uses a non-reentrant model
+
+
+ *************** function _dataCtrl *****************
+ Defined at:
+		line 117 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+  DATA            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  DATA            1    3[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       1       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       1       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_delay
+ This function is called by:
+		_beginCount
+		_dispLCD
+		_dispSTR
+ This function uses a non-reentrant model
+
+
+ *************** function _delay *****************
+ Defined at:
+		line 200 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+  timer           2    0[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       2       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       3       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_beginCount
+		_instCtrl
+		_initLCD
+		_dataCtrl
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[BANK0 ] unsigned int 
+  multiplicand    2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       6       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_beginCount
+ This function uses a non-reentrant model
+
+
+ *************** function ___awmod *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[BANK0 ] int 
+  dividend        2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  sign            1    6[BANK0 ] unsigned char 
+  counter         1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       2       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       7       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_beginCount
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[BANK0 ] int 
+  dividend        2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    7[BANK0 ] int 
+  sign            1    6[BANK0 ] unsigned char 
+  counter         1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       4       0       0       0
+      Locals:         0       4       0       0       0
+      Temps:          0       1       0       0       0
+      Totals:         0       9       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_beginCount
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR *****************
+ Defined at:
+		line 208 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          6       0       0       0       0
+      Totals:         6       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_toogleFlag
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _toogleFlag *****************
+ Defined at:
+		line 225 in file "C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+      Params:         0       0       0       0       0
+      Locals:         0       0       0       0       0
+      Temps:          0       0       0       0       0
+      Totals:         0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_ISR
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+		___awmod       		CODE           	030E	0000	79
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c estimated size: 79
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+		___wmul        		CODE           	0430	0000	37
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c estimated size: 37
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+		___awdiv       		CODE           	02B1	0000	93
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c estimated size: 93
+
+shared
+		__initializatio		CODE           	0015	0000	44
+
+shared estimated size: 44
+
+C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c
+		_beginCount    		CODE           	0045	0000	345
+		_delay         		CODE           	04D0	0000	17
+		_ISR           		CODE           	038F	0000	41
+		_main          		CODE           	0455	0000	34
+		_instCtrl      		CODE           	0499	0000	19
+		_dataCtrl      		CODE           	04AC	0000	19
+		_dispSTR       		CODE           	0477	0000	34
+		_toogleFlag    		CODE           	035D	0000	50
+		_dispHeader    		CODE           	023E	0000	115
+		_dispLCD       		CODE           	019E	0000	160
+		_initLCD       		CODE           	0408	0000	40
+
+C:\Users\RetroGeek\Documents\GIT\ProteusLibrary\EggTimer\EggTimer.c estimated size: 874
+

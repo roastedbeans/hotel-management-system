@@ -1,0 +1,16 @@
+___awdiv: CODE, 689 0 93
+_beginCount: CODE, 69 0 345
+_delay: CODE, 1232 0 17
+_ISR: CODE, 911 0 41
+___awmod: CODE, 782 0 79
+_main: CODE, 1109 0 34
+_instCtrl: CODE, 1177 0 19
+_dataCtrl: CODE, 1196 0 19
+__initialization: CODE, 21 0 44
+_dispSTR: CODE, 1143 0 34
+_toogleFlag: CODE, 861 0 50
+_dispHeader: CODE, 574 0 115
+_dispLCD: CODE, 414 0 160
+___wmul: CODE, 1072 0 37
+_initLCD: CODE, 1032 0 40
+Total: 1127

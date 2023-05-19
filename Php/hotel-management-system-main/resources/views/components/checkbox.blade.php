@@ -1,0 +1,1 @@
+<input {{ $attributes->merge(['type' => 'checkbox', 'class' => 'hover:opacity-80 focus:bg-quaternary active:bg-quaternary text-primary focus:outline-none transition ease-in-out duration-150 accent-primary']) }}>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "catchy-mager";
+    src: url("/public/css/fonts/Catchy-Mager-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url("/public/css/fonts/Sen-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sen-bold";
+    src: url("/public/css/fonts/Sen-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sen-extra";
+    src: url("/public/css/fonts/Sen-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the scrollbar and track */
+::-webkit-scrollbar {
+    display: none;
+      /* Optional: Add this to hide the scrollbar in Firefox */
+    scrollbar-width: none;
+  }
+  
